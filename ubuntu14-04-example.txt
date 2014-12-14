@@ -1,6 +1,8 @@
 #ubuntu 14.04 Desktop (iso image) downloaded from ubuntu.com
 #with VMPlayer and Ubuntu14-04 ISO we created a Ubuntu14-04 Virtual Machine
 #packages you have to install
+
+
 sudo apt-get -y install git
 sudo apt-get -y install curl
 sudo apt-get -y install libssl1.0.0:i386
