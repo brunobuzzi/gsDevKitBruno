@@ -25,3 +25,7 @@ export PATH=$GEMSTONE/bin:$PATH
 #edit /etc/services file and put
 devKit_ldi	50377/tcp  #GEMSTONE Long Distance Interchange
 
+#set the shared memory max in order that Linux value is greater than GemStone Share Page Cache Size
+#by commmand
+#adding to /etc/sysctl.conf: kernel.shmmax=4702660608
+sudo sysctl -w kernel.shmmax=4702660608
