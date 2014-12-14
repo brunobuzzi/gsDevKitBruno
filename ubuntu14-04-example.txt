@@ -1,0 +1,24 @@
+#ubuntu 14.04 Desktop (iso image) downloaded from ubuntu.com
+#with VMPlayer and Ubuntu14-04 ISO we created a Ubuntu14-04 Virtual Machine
+#packages you have to install
+sudo apt-get -y install git
+sudo apt-get -y install curl
+sudo apt-get -y install libssl1.0.0:i386
+sudo apt-get -y install libpam0g:i386
+sudo apt-get -y install gcc-multilib libstdc++6:i386
+sudo apt-get -y install unzip
+sudo ln -s /usr/lib/i386-linux-gnu/libstdc++.so.6 /usr/lib/i386-linux-gnu/libstdc++.so
+sudo apt-get -y install libx11-6:i386
+sudo apt-get -y install libcgmanager0:i386
+sudo apt-get -y install libudev1:i386
+sudo apt-get -y install libgl1-mesa-glx:i386
+sudo apt-get -y install libgl1-mesa-dev:i386
+
+#you should put this in /home/<username>/.bashrc
+export GS_HOME=/home/bruno/gsDevKitBruno
+export PATH=$GS_HOME/bin:$PATH
+export GEMSTONE=/home/bruno/gsDevKitBruno/gemstone/products/GemStone64Bit3.2.1-x86_64.Linux
+export PATH=$GEMSTONE/bin:$PATH
+
+#edit /etc/services file and put
+devKit_ldi	50377/tcp  #GEMSTONE Long Distance Interchange
