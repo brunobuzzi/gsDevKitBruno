@@ -22,3 +22,4 @@ export PATH=$GEMSTONE/bin:$PATH
 
 #edit /etc/services file and put
 devKit_ldi	50377/tcp  #GEMSTONE Long Distance Interchange
+
